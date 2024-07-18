@@ -1,0 +1,20 @@
+input[type="text"] {
+  background-color: var(--input-view-bg);
+  color: var(--color-secondary-text);
+}
+
+input[type="text"]::placeholder {
+  color: var(--color-secondary-text);
+}
+
+input[type="text"]:focus{
+  color: var(--color-primary-text);
+  background-color: var(--input-hover-bg);
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+input[type="text"]:hover{
+  background-color: var(--input-hover-bg);
+}

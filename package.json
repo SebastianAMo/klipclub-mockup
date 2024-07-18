@@ -7,12 +7,14 @@
     "start": "webpack serve --mode development",
     "build": "webpack --mode production",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint . --ext .tsx --fix"
+    "lint:fix": "eslint . --ext .tsx --fix",
+    "build-css": "sass src/styles/custom.scss:src/styles/custom.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1"
@@ -30,6 +32,8 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "html-webpack-plugin": "^5.6.0",
     "prettier": "^3.3.3",
+    "sass": "^1.77.8",
+    "sass-loader": "^14.2.1",
     "style-loader": "^4.0.0",
     "ts-loader": "^9.5.1",
     "typescript": "^5.5.3",

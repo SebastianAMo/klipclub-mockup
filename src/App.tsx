@@ -1,7 +1,12 @@
 import React from 'react';
+import Navbar from './components/Navbar';
 
 function App() {
-  return <div>Hello, Klipclub!</div>;
+  return (
+    <div className="App">
+      <Navbar />
+    </div>
+  );
 }
 
 export default App;

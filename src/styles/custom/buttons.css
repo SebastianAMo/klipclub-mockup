@@ -1,0 +1,38 @@
+.btn-primary {
+  background-color: var(--btn-green-bg);
+  color: var(--btn-green-text);
+  border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: var(--btn-green-hover-bg);
+}
+
+.btn-dark {
+  background-color: var(--btn-transparent-bg);
+  color: var(--btn-transparent-text);
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: var(--btn-transparent-hover-bg);
+}
+
+.btn-dark:active {
+  background-color: var(--btn-transparent-active-bg);
+}
+
+.btn-secondary {
+  background-color: var(--btn-dark-bg);
+  color: var(--btn-dark-text);
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: var(--btn-dark-hover-bg);
+}
+
+.btn-secondary:active {
+  background-color: var(--btn-dark-active-bg);
+}
