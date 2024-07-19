@@ -1,17 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 @import 'variables.css';
 @import './custom/buttons.css';
 @import './custom/inputs.css';
 
 @import './components/navbar.css';
+@import './components/carousel.css';
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
   background-color: var(--color-background);
   color: var(--color-primary-text);
 }
 
 .icon-green {
   fill: var(--color-icon-green);
+}
+
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
 }

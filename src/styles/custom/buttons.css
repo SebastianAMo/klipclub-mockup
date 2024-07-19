@@ -1,3 +1,7 @@
+.btn {
+  border-radius: 33px;
+}
+
 .btn-primary {
   background-color: var(--btn-green-bg);
   color: var(--btn-green-text);
@@ -7,6 +11,7 @@
 .btn-primary:hover,
 .btn-primary:active {
   background-color: var(--btn-green-hover-bg);
+  color: var(--btn-green-text);
 }
 
 .btn-dark {

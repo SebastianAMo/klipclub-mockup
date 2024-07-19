@@ -8,7 +8,8 @@
     "build": "webpack --mode production",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --ext .tsx --fix",
-    "build-css": "sass src/styles/custom.scss:src/styles/custom.css"
+    "build-css": "sass src/styles/custom.scss:src/styles/custom.css",
+    "prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\""
   },
   "keywords": [],
   "author": "",

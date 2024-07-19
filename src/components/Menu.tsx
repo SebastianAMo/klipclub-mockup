@@ -4,34 +4,34 @@ import { FaVideo } from 'react-icons/fa';
 import { FiMessageCircle } from 'react-icons/fi';
 import { MdOutlineNotificationsNone } from 'react-icons/md';
 
-function Header() {
+function Menu() {
   return (
     <header className="header container-fluid py-2">
       <div className="d-flex justify-content-between align-items-center">
         <div className="d-flex align-items-center">
           <div className="logo d-flex align-items-center me-5">
             <TbSquareLetterKFilled className="icon-green me-1" size={30} />
-            <span className="fw-bold fs-6">Klipclub</span>
+            <span className="fw-bold">Klipclub</span>
           </div>
           <nav>
             <ul className="nav">
               <li className="nav-item">
-                <a className="btn btn-dark rounded-pill me-2" href="#">
+                <a className="btn btn-dark fw-bold me-2" href="#">
                   Broadcasts
                 </a>
               </li>
               <li className="nav-item">
-                <a className="btn btn-dark rounded-pill me-2" href="#">
+                <a className="btn btn-dark fw-bold me-2" href="#">
                   Virtual Events
                 </a>
               </li>
               <li className="nav-item">
-                <a className="btn btn-dark rounded-pill me-2" href="#">
+                <a className="btn btn-dark fw-bold me-2" href="#">
                   Artists
                 </a>
               </li>
               <li className="nav-item">
-                <a className="btn btn-dark rounded-pill" href="#">
+                <a className="btn btn-dark fw-bold" href="#">
                   KlipWall
                 </a>
               </li>
@@ -66,4 +66,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Menu;

@@ -1,0 +1,22 @@
+.carousel-indicators [data-bs-target] {
+  border-radius: 33px;
+  background-color: #FFFFFF0D;
+  padding: 3px 1px;
+  cursor: pointer;
+  margin: 3px;
+  transition: opacity .6s ease;
+}
+
+.carousel-indicators .active {
+  background-color: #FFFFFF40; /* Color secundario con opacidad */
+}
+
+.btn-secondary {
+  background-color: var(--btn-dark-bg);
+  color: var(--btn-dark-text);
+  border: none;
+}
+
+.btn {
+  border-radius: 33px;
+}
