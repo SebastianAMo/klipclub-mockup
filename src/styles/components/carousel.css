@@ -7,6 +7,11 @@
   transition: opacity .6s ease;
 }
 
+.carousel-home .carousel-indicators {
+  position: relative;
+}
+
+
 .carousel-indicators .active {
   background-color: #FFFFFF40; /* Color secundario con opacidad */
 }
