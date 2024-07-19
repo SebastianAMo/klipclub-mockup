@@ -6,7 +6,7 @@ import { MdOutlineNotificationsNone } from 'react-icons/md';
 
 function Menu() {
   return (
-    <header className="header container-fluid py-2">
+    <header className="header container-fluid fixed-top py-3">
       <div className="d-flex justify-content-between align-items-center">
         <div className="d-flex align-items-center">
           <div className="logo d-flex align-items-center me-5">

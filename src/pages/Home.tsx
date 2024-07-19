@@ -8,8 +8,8 @@ function Home() {
     <div>
       <Menu />
       <div className="row justify-content-center">
-        <div className="col-8">
-          <div className="row">
+        <div className="col-8 mt-4">
+          <div className="row mt-5">
             <BannerSection />
           </div>
           <div className="row">
