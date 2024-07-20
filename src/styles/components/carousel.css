@@ -11,17 +11,26 @@
   position: relative;
 }
 
+.carousel-trending .carousel-indicators {
+  position: absolute;
+  top: calc(85% + 5px); /* Ajusta este valor para posicionar los indicadores más abajo */
+}
 
 .carousel-indicators .active {
   background-color: #FFFFFF40; /* Color secundario con opacidad */
 }
 
-.btn-secondary {
-  background-color: var(--btn-dark-bg);
-  color: var(--btn-dark-text);
-  border: none;
+.carousel-trending .category {
+  min-width: 57px;
+  min-height: 24px;
+  gap: 10px;
+  padding: 5px 10px;
+  border-radius: 23px;
+  background-color: #FFFFFF26;
+  color: white;
+  font-size: 14px;
 }
 
-.btn {
-  border-radius: 33px;
+.carousel-trending .title {
+  font-size: 20px;
 }

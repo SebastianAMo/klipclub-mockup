@@ -1,0 +1,38 @@
+.add-post .card {
+  background-color: #292927;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.add-post .card p-2 {
+  cursor: pointer;
+}
+
+.add-post .card p-3 {
+  cursor: text;
+}
+
+.add-post .form-control,
+.add-post .form-select {
+  background-color: #393936;
+  color: #e1e0e1;
+  border: none;
+  border-radius: 33px;
+}
+
+.add-post .form-select {
+  --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3e%3cpath fill=%27none%27 stroke=%27%23ffffff%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%272%27 d=%27m2 5 6 6 6-6%27/%3e%3c/svg%3e");
+}
+
+.add-post .form-control::placeholder,
+.add-post .form-select::placeholder {
+  color: var(--color-secondary-text);
+}
+
+.add-post .form-control:focus {
+  box-shadow: none;
+}
+
+.add-post .form-select:focus {
+  box-shadow: none;
+}
