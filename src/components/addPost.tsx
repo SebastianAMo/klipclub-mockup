@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
+import { Post } from '../types/Post';
 import { FaImage, FaVideo, FaTags, FaSmile } from 'react-icons/fa';
 import { IoMdMic } from 'react-icons/io';
-import { addPost } from '../services/Posts';
 
-const AddPost = () => {
+const AddPost = ({ addPost }: { addPost: (post: Post) => void }) => {
   const [content, setContent] = useState('');
   const [expanded, setExpanded] = useState(false);
   const [privacy, setPrivacy] = useState('Public');

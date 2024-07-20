@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { getPosts } from '../services/Posts';
+import { Post } from '../types/Post';
 import Menu from '../components/Menu';
 import BannerSection from '../components/BannerSection';
 import TrendingSection from '../components/TrendingSection';
@@ -7,6 +9,12 @@ import AddPost from '../components/addPost';
 import TopSection from '../components/TopSection';
 
 function Home() {
+  const [posts, setPosts] = useState(getPosts());
+
+  const addPost = (newPost: Post) => {
+    setPosts([newPost, ...posts]);
+  };
+
   return (
     <div>
       <div className="row">
@@ -25,8 +33,8 @@ function Home() {
               <h2 className="title fw-bold m-0">KlipWall</h2>
             </div>
             <div className="col-8">
-              <AddPost />
-              <PostList />
+              <AddPost addPost={addPost} />
+              <PostList posts={posts} />
             </div>
             <div className="col-4">
               <TopSection />

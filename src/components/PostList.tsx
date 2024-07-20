@@ -1,11 +1,9 @@
 import React from 'react';
-import { getPosts } from '../services/Posts';
+import { Post } from '../types/Post';
 import { BsThreeDots } from 'react-icons/bs';
 import { FaHeart, FaComment, FaShare } from 'react-icons/fa';
 
-const PostList = () => {
-  const posts = getPosts();
-
+const PostList = ({ posts }: { posts: Post[] }) => {
   return (
     <div className="post-list">
       <div className="options d-flex justify-content-start align-items-center mb-4">
@@ -17,7 +15,7 @@ const PostList = () => {
         {posts.map((post) => (
           <div key={post.id} className="post card mb-4">
             <div className="card-body">
-              <div className="row mb-">
+              <div className="row mb-3">
                 <div className="col-auto d-flex align-items-center">
                   <img
                     src={post.user.avatar}
@@ -26,11 +24,11 @@ const PostList = () => {
                     style={{ width: '40px', height: '40px' }}
                   />
                 </div>
-                <div className="col d-flex flex-column">
+                <div className="col ps-0 d-flex align-items-center">
                   <div className="d-flex align-items-center">
                     <strong className="me-1">{post.user.name}</strong>
                     {post.user.verified && <span className="text-primary me-2">✔</span>}
-                    <p className="mb-0 text-muted">{post.user.time}</p>
+                    <p className="mb-0">{post.user.time}</p>
                   </div>
                 </div>
                 <div className="col-auto">
