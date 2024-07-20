@@ -1,19 +1,31 @@
+/* General Button Styles */
 .btn {
   border-radius: 33px;
 }
 
+/* Success Button Styles */
 .btn-primary {
   background-color: var(--btn-green-bg);
   color: var(--btn-green-text);
   border: none;
 }
 
-.btn-primary:hover,
-.btn-primary:active {
+.btn-primary:hover {
   background-color: var(--btn-green-hover-bg);
   color: var(--btn-green-text);
 }
 
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.btn-check:checked,
+.btn-primary.active,
+.btn-primary.show,
+.btn-primary:first-child:active {
+  background-color: var(--btn-green-active-bg) !important;
+  color: var(--btn-green-text) !important;
+}
+
+/* Dark Button Styles */
 .btn-dark {
   background-color: var(--btn-transparent-bg);
   color: var(--btn-transparent-text);
@@ -24,10 +36,15 @@
   background-color: var(--btn-transparent-hover-bg);
 }
 
-.btn-dark:active {
-  background-color: var(--btn-transparent-active-bg);
+.btn-dark:active,
+.btn-dark.btn-check:checked,
+.btn-dark.active,
+.btn-dark.show,
+.btn-dark:first-child:active {
+  background-color: var(--btn-transparent-active-bg) !important;
 }
 
+/* Secondary Button Styles */
 .btn-secondary {
   background-color: var(--btn-dark-bg);
   color: var(--btn-dark-text);
@@ -38,6 +55,10 @@
   background-color: var(--btn-dark-hover-bg);
 }
 
-.btn-secondary:active {
-  background-color: var(--btn-dark-active-bg);
+.btn-secondary:active,
+.btn-secondary.btn-check:checked,
+.btn-secondary.active,
+.btn-secondary.show,
+.btn-secondary:first-child:active {
+  background-color: var(--btn-dark-active-bg) !important;
 }

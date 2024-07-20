@@ -17,7 +17,12 @@ const BannerSection = () => {
                 <div className="col-3 d-flex flex-column align-items-center text-white">
                   <div className="profile-container d-flex flex-column justify-content-end w-100 h-100">
                     <div className="profile-image-container text-center mb-3">
-                      <img src={item.profileImg} alt="Profile" className="profile-image rounded-circle" />
+                      <img
+                        src={item.profileImg}
+                        alt="Profile"
+                        className="rounded-circle"
+                        style={{ height: '102px', width: '102px' }}
+                      />
                     </div>
                     <div className="text-center">
                       <h4>{item.name}</h4>

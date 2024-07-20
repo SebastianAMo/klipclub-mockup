@@ -1,22 +1,16 @@
-.header .profile-image-container {
-  width: 2.4rem;
-  height: 2.4rem;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.menu {
+  background-color: var(--color-background);
 }
 
-.header .profile-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.header .search-input {
+.menu .search-input {
   padding-left: 40px; /* Espacio para el ícono */
+  padding-right: 200px;
   background-image: var(--search-icon-url);
   background-repeat: no-repeat;
   background-position: 10px center; /* Ajusta la posición del ícono */
   background-size: 20px; /* Ajusta el tamaño del ícono */
+}
+
+.menu .search-input:focus {
+  border-color: var(--btn-green-bg);
 }

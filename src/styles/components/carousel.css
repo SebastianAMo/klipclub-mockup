@@ -1,10 +1,10 @@
 .carousel-indicators [data-bs-target] {
   border-radius: 33px;
   background-color: #FFFFFF0D;
-  padding: 3px 1px;
   cursor: pointer;
-  margin: 3px;
-  transition: opacity .6s ease;
+  min-width: 16px;
+  min-height: 11px;
+  transition: opacity 0.6s ease;
 }
 
 .carousel-home .carousel-indicators {
@@ -13,11 +13,11 @@
 
 .carousel-trending .carousel-indicators {
   position: absolute;
-  top: calc(85% + 5px); /* Ajusta este valor para posicionar los indicadores más abajo */
+  top: calc(85% + 5px);
 }
 
 .carousel-indicators .active {
-  background-color: #FFFFFF40; /* Color secundario con opacidad */
+  background-color: #FFFFFF40;
 }
 
 .carousel-trending .category {
@@ -29,8 +29,4 @@
   background-color: #FFFFFF26;
   color: white;
   font-size: 14px;
-}
-
-.carousel-trending .title {
-  font-size: 20px;
 }

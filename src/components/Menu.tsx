@@ -6,7 +6,7 @@ import { MdOutlineNotificationsNone } from 'react-icons/md';
 
 function Menu() {
   return (
-    <header className="header container-fluid fixed-top py-3">
+    <header className="menu container-fluid fixed-top py-3">
       <div className="d-flex justify-content-between align-items-center">
         <div className="d-flex align-items-center">
           <div className="logo d-flex align-items-center me-5">
@@ -39,8 +39,8 @@ function Menu() {
           </nav>
         </div>
         <div className="d-flex align-items-center">
-          <div className="search-container pe-6">
-            <input type="text" className="form-control search-input border-0 rounded-pill me-2" placeholder="Search" />
+          <div className="search-container">
+            <input type="text" className="form-control search-input rounded-pill me-2" placeholder="Search" />
           </div>
           <div className="btn btn-dark rounded-circle">
             <FaVideo className="icon-green" size={22} />
@@ -53,13 +53,11 @@ function Menu() {
           <button className="btn btn-secondary rounded-circle me-2">
             <MdOutlineNotificationsNone size={22} />
           </button>
-          <div className="profile-image-container">
-            <img
-              src="https://imgv3.fotor.com/images/cover-photo-image/ai-generate-dragon-from-text-in-Fotor-AI-image-generator.jpg"
-              alt="Profile"
-              className="profile-image rounded-circle"
-            />
-          </div>
+          <img
+            src="https://imgv3.fotor.com/images/cover-photo-image/ai-generate-dragon-from-text-in-Fotor-AI-image-generator.jpg"
+            alt="Profile"
+            className="profile-image rounded-circle"
+          />
         </div>
       </div>
     </header>

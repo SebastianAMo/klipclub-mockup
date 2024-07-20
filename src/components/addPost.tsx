@@ -3,18 +3,18 @@ import { Post } from '../types/Post';
 import { FaImage, FaVideo, FaTags, FaSmile } from 'react-icons/fa';
 import { IoMdMic } from 'react-icons/io';
 
-const AddPost = ({ addPost }: { addPost: (post: Post) => void }) => {
+const AddPost = ({ addPost }: { addPost: (post: Post) => Promise<void> }) => {
   const [content, setContent] = useState('');
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState<boolean>(false);
   const [privacy, setPrivacy] = useState('Public');
 
   const handleExpand = () => {
     setExpanded(true);
   };
 
-  const handlePost = () => {
+  const handlePost = async () => {
     if (content.trim()) {
-      const newPost = {
+      const newPost: Post = {
         id: Math.random(),
         user: {
           name: 'New User', // Aquí puedes poner el nombre del usuario actual
@@ -31,23 +31,18 @@ const AddPost = ({ addPost }: { addPost: (post: Post) => void }) => {
         },
       };
 
-      addPost(newPost);
+      await addPost(newPost);
       setContent('');
       setExpanded(false);
     }
   };
 
   return (
-    <div className="add-post my-4">
+    <div className="add-post mb-4">
       <div className={`card ${expanded ? 'p-3' : 'p-3'}`} onClick={handleExpand}>
         <div className="row">
           <div className="col-auto d-flex align-items-start">
-            <img
-              src="https://via.placeholder.com/50"
-              alt="User"
-              className="rounded-circle"
-              style={{ width: '40px', height: '40px' }}
-            />
+            <img src="https://via.placeholder.com/50" alt="User" className="profile-image rounded-circle" />
           </div>
           <div className="col ps-0">
             {expanded ? (

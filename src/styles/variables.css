@@ -1,29 +1,17 @@
 :root {
-  /* General */
+  /* General Colors */
   --color-primary-text: #e4e4e3;
   --color-secondary-text: #85837c;
-  --color-text: #e4e4e3;
-  --color-button-hover: #323330;
-  --color-icon-green: #1fd660;
   --color-background: #1c1c1b;
-  --font-size: 16px;
-  --font-title-size: 20px;
-
+  --color-card-bg: #292927;
+  --color-input-bg: #393936;
+  --color-input-hover-bg: #454440;
+  --color-icon-green: #1fd660;
+  --color-button-hover: #323330;
   --color-notification-red: #e72459;
-
-  /* Message and notification */
   --color-selection-hover: #4b4b49;
 
-  /* Sidebar */
-  --color-top5-title: #545452;
-  --color-competitors: #60dff6;
-  --color-trending: #4eca67;
-  --color-private-channel: #f43762;
-
-  /* List post */
-  --color-selected-button: #4b4b49;
-
-  /* Button styles */
+  /* Button Styles */
   --btn-transparent-bg: transparent;
   --btn-transparent-hover-bg: #323330;
   --btn-transparent-active-bg: #4b4b49;
@@ -31,7 +19,7 @@
 
   --btn-green-bg: #1fd660;
   --btn-green-hover-bg: #44e27d;
-  --btn-green-active-bg: #44e27d;
+  --btn-green-active-bg: #82f2ab;
   --btn-green-text: #052f17;
 
   --btn-dark-bg: #3e3f3c;
@@ -39,12 +27,24 @@
   --btn-dark-active-bg: #575755;
   --btn-dark-text: #e1e0e1;
 
-  /* Text field colors */
+  /* Input Field Colors */
   --input-view-bg: #393936;
   --input-view-text: #85837c;
-  --input-writing-bg: #393936;
   --input-writing-text: #e3e3e2;
-  --input-hover-bg: #454440;
 
-  --search-icon-url: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%2385837c" viewBox="0 0 24 24"%3E%3Cpath d="M10 2a8 8 0 106.32 14.906l4.385 4.385 1.415-1.414-4.385-4.385A8 8 0 0010 2zm0 2a6 6 0 110 12A6 6 0 0110 4z"%3E%3C/path%3E%3C/svg%3E'); /* Search icon */
+  /* Sidebar Colors */
+  --sidebar-top5-title: #545452;
+  --sidebar-competitors: #60dff6;
+  --sidebar-trending: #4eca67;
+  --sidebar-private-channel: #f43762;
+
+  /* Post List */
+  --list-post-selected-button: #4b4b49;
+
+  /* Font Sizes */
+  --font-size: 16px;
+  --font-title-size: 20px;
+
+  /* Search Icon URL */
+  --search-icon-url: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23e1e0e1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Ccircle cx="11" cy="11" r="8"%3E%3C/circle%3E%3Cline x1="21" y1="21" x2="16.65" y2="16.65"%3E%3C/line%3E%3C/svg%3E'); /* Search icon */
 }

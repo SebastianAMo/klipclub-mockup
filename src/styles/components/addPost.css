@@ -1,5 +1,5 @@
 .add-post .card {
-  background-color: #292927;
+  background-color: var(--color-card-bg);
   border-radius: 15px;
   transition: all 0.3s ease;
 }
@@ -29,10 +29,7 @@
   color: var(--color-secondary-text);
 }
 
-.add-post .form-control:focus {
-  box-shadow: none;
-}
-
+.add-post .form-control:focus, 
 .add-post .form-select:focus {
   box-shadow: none;
 }

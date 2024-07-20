@@ -17,12 +17,7 @@ const PostList = ({ posts }: { posts: Post[] }) => {
             <div className="card-body">
               <div className="row mb-3">
                 <div className="col-auto d-flex align-items-center">
-                  <img
-                    src={post.user.avatar}
-                    alt={post.user.name}
-                    className="rounded-circle"
-                    style={{ width: '40px', height: '40px' }}
-                  />
+                  <img src={post.user.avatar} alt={post.user.name} className="profile-image rounded-circle" />
                 </div>
                 <div className="col ps-0 d-flex align-items-center">
                   <div className="d-flex align-items-center">

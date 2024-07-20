@@ -4,7 +4,7 @@
 @import './custom/buttons.css';
 @import './custom/inputs.css';
 
-@import './components/navbar.css';
+@import './components/menu.css';
 @import './components/carousel.css';
 @import './components/addPost.css';
 @import './components/postList.css';
@@ -16,10 +16,6 @@ body {
   color: var(--color-primary-text);
 }
 
-.header {
-  background-color: var(--color-background);
-}
-
 .title {
   font-size: var(--font-title-size);
 }
@@ -28,7 +24,7 @@ body {
   fill: var(--color-icon-green);
 }
 
-.btn {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+.profile-image {
+  width: 40px;
+  height: 40px;
 }

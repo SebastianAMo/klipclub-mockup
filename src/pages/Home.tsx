@@ -11,7 +11,7 @@ import TopSection from '../components/TopSection';
 function Home() {
   const [posts, setPosts] = useState(getPosts());
 
-  const addPost = (newPost: Post) => {
+  const addPost = async (newPost: Post) => {
     setPosts([newPost, ...posts]);
   };
 
@@ -30,7 +30,7 @@ function Home() {
           </div>
           <div className="row mt-5">
             <div className="col-12">
-              <h2 className="title fw-bold m-0">KlipWall</h2>
+              <h2 className="title fw-bold mb-4">KlipWall</h2>
             </div>
             <div className="col-8">
               <AddPost addPost={addPost} />
