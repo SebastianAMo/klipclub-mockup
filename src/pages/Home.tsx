@@ -17,7 +17,7 @@ function Home() {
   };
 
   return (
-    <div>
+    <div className="container-fluid">
       <div className="row">
         <Menu />
       </div>

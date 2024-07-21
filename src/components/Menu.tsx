@@ -6,12 +6,12 @@ import { MdOutlineNotificationsNone } from 'react-icons/md';
 
 function Menu() {
   return (
-    <header className="menu container-fluid fixed-top py-3">
+    <header className="menu container-fluid fixed-top py-3 px-3">
       <div className="d-flex justify-content-between align-items-center">
         <div className="d-flex align-items-center">
           <div className="logo d-flex align-items-center me-5">
             <TbSquareLetterKFilled className="icon-green me-1" size={30} />
-            <span className="fw-bold">Klipclub</span>
+            <span className="fw-bold title">Klipclub</span>
           </div>
           <nav>
             <ul className="nav">
