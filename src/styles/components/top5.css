@@ -1,0 +1,38 @@
+.top5 .trending {
+  color: var(--sidebar-trending);
+}
+
+.top5 .competitors {
+  color: var(--sidebar-competitors);
+}
+
+.top5 .private-channel {
+  color: var(--sidebar-private-channel);
+}
+
+.top5 .title-container {
+  background-color: #545553;
+  border-radius: 33px;
+}
+
+.top5 .position-container {
+  background-color: #32322f;
+  border-radius: 33px;
+}
+
+.top5 .carousel-indicators {
+  position: absolute;
+  top: calc(95% + 5px);
+}
+
+.carousel-indicator.active.trending {
+  background-color: var(--sidebar-trending);
+}
+
+.carousel-indicator.active.competitors {
+  background-color: var(--sidebar-competitors);
+}
+
+.carousel-indicator.active.private-channel {
+  background-color: var(--sidebar-private-channel);
+}

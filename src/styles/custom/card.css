@@ -1,0 +1,5 @@
+.card{
+  background-color: #292927;
+  color: var(--color-primary-text);
+  border-radius: 16px;
+}

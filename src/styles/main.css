@@ -3,11 +3,13 @@
 @import 'variables.css';
 @import './custom/buttons.css';
 @import './custom/inputs.css';
+@import './custom/card.css';
 
 @import './components/menu.css';
 @import './components/carousel.css';
 @import './components/addPost.css';
 @import './components/postList.css';
+@import './components/top5.css';
 
 body {
   font-family: 'Montserrat', sans-serif;
