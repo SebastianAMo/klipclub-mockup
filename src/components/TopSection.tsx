@@ -9,7 +9,7 @@ const TopSection = () => {
   const carouselId = `carouselTop5-${uniqueIdCounter++}`;
 
   return (
-    <div className="card top5 pb-5">
+    <div className="card top5 pb-5 mb-4">
       <div className="px-4 align-items-center justify-content-center text-center">
         <div className="title-container fw-bold py-2 my-3">Top 5</div>
       </div>
