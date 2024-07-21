@@ -16,7 +16,7 @@ const posts = [
     ],
     stats: {
       likes: 20,
-      comments: 10000,
+      comments: 10,
       shares: 42,
     },
   },
@@ -37,7 +37,7 @@ const posts = [
     ],
     stats: {
       likes: 15,
-      comments: 5000,
+      comments: 5,
       shares: 30,
     },
   },
@@ -53,7 +53,7 @@ const posts = [
     images: ['https://via.placeholder.com/400x190'],
     stats: {
       likes: 50,
-      comments: 20000,
+      comments: 20,
       shares: 100,
     },
   },

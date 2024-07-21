@@ -10,6 +10,7 @@
 @import './components/addPost.css';
 @import './components/postList.css';
 @import './components/top5.css';
+@import './components/footer.css';
 
 body {
   font-family: 'Montserrat', sans-serif;

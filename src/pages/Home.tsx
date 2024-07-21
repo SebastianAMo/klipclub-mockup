@@ -7,6 +7,7 @@ import TrendingSection from '../components/TrendingSection';
 import PostList from '../components/PostList';
 import AddPost from '../components/addPost';
 import TopSection from '../components/TopSection';
+import Footer from '../components/Footer';
 
 function Home() {
   const [posts, setPosts] = useState(getPosts());
@@ -20,7 +21,7 @@ function Home() {
       <div className="row">
         <Menu />
       </div>
-      <div className="row justify-content-center">
+      <div className="row justify-content-center mb-5">
         <div className="col-8 mt-4">
           <div className="row mt-5">
             <BannerSection />
@@ -41,6 +42,9 @@ function Home() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="row">
+        <Footer />
       </div>
     </div>
   );
